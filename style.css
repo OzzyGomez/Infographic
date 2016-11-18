@@ -8,7 +8,7 @@
 	header, footer {
 		margin: 0 auto;
 		min-width: 1280px;
-		max-width: 1280px;
+		/*max-width: 1280px;*/
 		font-family: arial,sans-serif;
 		font-size: 13px;
 	}
@@ -61,7 +61,7 @@
 	section {
 		margin: 0 auto;
 		min-width: 1280px;
-		max-width: 1280px;
+		/*max-width: 1280px;*/
 		text-align: center;
 		font-family: 'Product Sans', Arial, sans-serif;
 		position: absolute;
