@@ -4,6 +4,23 @@
 	<title>Infographic</title>
 	<link href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+		footer a {
+			text-decoration: none;
+			color: #666;
+		}
+		header a {
+			text-decoration: none;
+			color: #000;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		section a {
+			text-decoration: none;
+			color :#000;
+		}
+	</style>
 </head>
 <body>
 
@@ -12,57 +29,138 @@
 <script>
   $(function(){
       $(".element").typed({
-        strings: ["How Does The Internet Work?", "How Do Algorithms Work?", "How Does The Internet Work?", "How Do Algorithms Work?"],
-        typeSpeed: 0
+        strings: ["How Does Google Search Work?", "How Do Algorithms Work?", "How Does The PageRank Algorithm Work?", "What Makes Google The Best?", "Algorithms"],
+        typeSpeed: 100
       });
   });
 </script>
 
 <header>
 	<ul>
-		<li>Gmail</li>
-		<li>Images</li>
-		<li>&#9641;</li>
-		<li><button>Sign In</button></li>
+		<li><a href="#">Gmail</a></li>
+		<li><a href="#">Images</a></li>
+		<li><a href="#">&#9641;</a></li>
+		<li><a href="#openModal1"><button>Sign In</button></a></li>
 	</ul>
 </header>
 <section>
-	<div class="circle bg-blue one"><span>Programmer Takes Creates Algorithm Based on Data</span></div>
+	<a href="#openModal3"><div class="circle bg-blue one"><span class="title" style="top: 22%;">Components of Google Search</span></div></a>
 	<div class="arrow a-one">&#x279e;</div>
 	
-	<div class="circle bg-red two"><span>Step 2</span></div>
+	<a href="#openModal4"><div class="circle bg-red two"><span class="title" style="top: 15%;">The PageRank Formula</span></div></a>
 	<div class="arrow a-two">&#x279e;</div>
 	
-	<div class="circle bg-green three"><span>Step 3</span></div>
+	<a href="#openModal5"><div class="circle bg-green three"><span class="title" style="top: 22%;">The Website Bounce Rate</span></div></a>
 	<div class="arrow a-three">&#x279e;</div>
 	
-	<div class="circle bg-yellow four"><span>Step 4</span></div>
+	<a href="#openModal6"><div class="circle bg-yellow four"><span class="title" style="top: 15%;">Googles Logarithmic Scale</span></div></a>
 	<div class="arrow a-four">&#x279e;</div>
 	
-	<div class="circle bg-red five"><span>Step 5</span></div>
+	<a href="#openModal7"><div class="circle bg-red five"><span class="title" style="top: 22%;">User<br>Data</span></div></a>
 	<div class="arrow a-five">&#x279e;</div>
+
 	<h1><span class="blue">Al</span><span class="red">go</span><span class="yellow">ri</span><span class="green">th</span><span class="red">ms</span></h1>
 	<input type="text" class="element"><br>
-	<a href="#openModal"><button>Algorithm Search</button></a> <button>I'm Feeling Lucky</button>
+	<a href="#openModal"><button>Algorithm Search</button></a> <a href="#openModal2"><button>I'm Feeling Lucky</button></a>
 </section>
 <footer>
 	<ul>
 		<div class="left">
-			<li>Advertising</li>
-			<li>Business</li>
-			<li>About</li>
+			<li><a href="#ad">Advertising</a></li>
+			<li><a href="#biz">Business</a></li>
+			<li><a href="#about">About</a></li>
 		</div>
 		<div class="right">
-			<li>Privacy</li>
-			<li>Terms</li>
-			<li>Settings</li>
+			<li><a href="#privacy">Privacy</a></li>
+			<li><a href="#terms">Terms</a></li>
+			<li><a href="#settings">Settings</a></li>
 		</div>
 	</ul>
 </footer>
 
-<div id="openModal" class="modalDialog">
-    <div>	<a href="#close" title="Close" class="close">X</a>
+<div id="openModal" class="modalDialog" style="overflow: auto;">
+    <div style="background-color: transparent;">	<a href="#close" title="Close" class="close">X</a>
+		<center><img src="GoogleSearch.jpg"></center>
+    </div>
+</div>
 
+<div id="openModal1" class="modalDialog">
+    <div class="font" style="background-color: transparent; color:#fff;">	<a href="#close" title="Close" class="close">X</a>
+    	<center>
+    		<h1>Google Users Statistics</h1>
+    		<div style="font-size:200px;"><span class="blue">1</span> <span class="red">Billion</span> <span class="green">Gmail</span> <span class="yellow">Users</span>   </div>
+    	</center>
+    </div>
+</div>
+
+<div id="openModal2" class="modalDialog">
+    <div class="font" style="background-color: transparent; color:#fff;">	<a href="#close" title="Close" class="close">X</a>
+    	<center>
+    		<h1>Are You Feeling Lucky?</h1>
+    		<div style="font-size:200px;"><span class="blue">1%</span> <span class="red">of</span> <span class="green">All</span> <span class="yellow">Search</span>   </div>
+    	</center>
+    </div>
+</div>
+
+<div id="openModal3" class="modalDialog">
+    <div style="text-align:center; border-radius: 330px; height: 600px; width: 600px; background-color:#4885ed;">	
+    	<a href="#close2" title="Close" class="close">X</a>
+    	<div style="margin-top: 115px;">
+    		<img src="Components.png">
+    		<small>https://www.rankforce.com/seo-costa-rica</small>
+	    </div>
+	</div>
+</div>
+
+<div id="openModal4" class="modalDialog">
+    <div style="text-align:center; border-radius: 330px; height: 600px; width: 600px; background-color:#db3236;">	
+    	<a href="#close2" title="Close" class="close">X</a>
+    	<h2 class="font" style="width: 315px;margin: 0 auto;margin-top: 15px;">The Original PageRank Algorithm</h2>
+
+    	<h2 class="font" style="text-align:left; margin-top: 100px; ">
+    		<center>PR(A) = (1-d) + d (PR(T1)/C(T1) + ... + PR(Tn)/C(Tn))</center>
+    		<ul>
+    			<li><span class="blue">PR(A)</span> - Page Rank of page A</li>
+    			<li><span class="green">PR(Ti)</span> - Page Rank of pages Ti which link to page A</li>
+    			<li><span class="yellow">C(Ti)</span> - number of outbound links on page Ti</li>
+    			<li><span class="blue">d</span> - damping factor which can be set between 0 and 1</li>
+    		</ul>
+    	</h2>
+
+    </div>
+</div>
+
+<div id="openModal5" class="modalDialog">
+    <div style="text-align:center; border-radius: 330px; height: 600px; width: 600px; background-color:#3cba54;">	
+    	<a href="#close2" title="Close" class="close">X</a>
+    	<h2 class="font" style="width: 315px;margin: 0 auto;margin-top: 15px;">The percentage of visits that go to only 1 page before exiting. Used to identify sites valuable sources of information</h2>
+    	
+    	<img src="bounce_rate2.png">
+    	<small>https://landerapp.com/blog/wp-content/uploads/bounce_rate-and-landing-pages.png</small>
+    </div>
+</div>
+
+<div id="openModal6" class="modalDialog">
+    <div style="text-align:center; border-radius: 330px; height: 600px; width: 600px; background-color:#f4c20d;">	
+    	<a href="#close2" title="Close" class="close">X</a>
+    	<h2 class="font" style="width: 315px;margin: 0 auto;margin-top: 15px;">Google Identifies which sites to show a user based on the number of hyperlinks on the web and the importance of the page containing those links.</h2>
+    	<img src="bubbles.png">
+    </div>
+</div>
+
+<div id="openModal7" class="modalDialog">
+    <div style="text-align:center; border-radius: 330px; height: 600px; width: 600px; background-color:#db3236;">	
+    	<a href="#close2" title="Close" class="close">X</a>
+    	<h2 class="font" style="width: 490px;margin: 0 auto;margin-top: 90px;">
+    		A combination of results from Google's index page and knowledge graph databases are arranged to provide the most relevant outcome for your search query.
+    	</h2>
+    	<h2>PageRank is a Vote. A link to a page counts as a vote of support.</h2>
+    </div>
+</div>
+
+<div id="ad" class="modalDialog">
+    <div>	<a href="#close" title="Close" class="close">X</a>
+    	<h1>Google Search Statistics</h1>
 
     </div>
 </div>
